@@ -16,11 +16,34 @@
 .*.sw*
 
 # ======================
-# Dependency Directories
+# Node.js Dependencies
 # ======================
 node_modules/
-vendor/
 package-lock.json
+npm-debug.log*
+
+# ======================
+# Hyperledger Fabric Generated Files
+# ======================
+# Network artifacts (generated during network startup)
+test-network/organizations/
+test-network/channel-artifacts/
+test-network/crypto-config/
+test-network/system-genesis-block/
+test-network/log.txt
+test-network/*.tar.gz
+
+# Wallet files (contain private keys)
+fabric-api/wallet/
+wallet/
+
+# Certificates and keys
+*.pem
+*.key
+
+# Network binaries
+bin/
+builders/
 
 # ======================
 # Build Output
@@ -30,28 +53,10 @@ build/
 target/
 
 # ======================
-# Hyperledger Fabric Specific
-# ======================
-bin/
-builders/
-config/
-external-chaincode/
-install-fabric.sh
-crypto-config/
-wallet/
-*.pem
-*.key
-channel-artifacts/
-ordererOrganizations/
-peerOrganizations/
-
-# Ignore all config/ folders except sample override
-!full-stack-asset-transfer-guide/infrastructure/sample-network/config
-
-# ======================
 # Logs & Temp
 # ======================
 *.log
 **/*.log
 tmp/
+.env
 
