@@ -1,34 +1,57 @@
-# Emacs backup files
+# ======================
+# OS & Editor Files
+# ======================
 *~
 *#
 .#*
-# Vim file artifacts
-.*.sw*
 .DS_Store
 .project
-# omit Go vendor directories
-vendor/
-.vscode
-.gradle
-.idea
-# Dependency directories
-node_modules/
-package-lock.json
-# Ignore Gradle build output directory
-build
-# Ignore Maven build output directory
-target
-
-# Eclipse
+.vscode/
+.idea/
+.gradle/
 .classpath
 .settings
 
-# installed Fabric binaries etc.
-/bin/
+# Vim Swap Files
+.*.sw*
+
+# ======================
+# Dependency Directories
+# ======================
+node_modules/
+vendor/
+package-lock.json
+
+# ======================
+# Build Output
+# ======================
+dist/
+build/
+target/
+
+# ======================
+# Hyperledger Fabric Specific
+# ======================
+bin/
 builders/
 config/
 external-chaincode/
 install-fabric.sh
+crypto-config/
+wallet/
+*.pem
+*.key
+channel-artifacts/
+ordererOrganizations/
+peerOrganizations/
 
-# override the ignore of all config/ folders
+# Ignore all config/ folders except sample override
 !full-stack-asset-transfer-guide/infrastructure/sample-network/config
+
+# ======================
+# Logs & Temp
+# ======================
+*.log
+**/*.log
+tmp/
+
