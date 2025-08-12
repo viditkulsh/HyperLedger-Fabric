@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Hyperledger Fabric Asset Transfer Chaincode with ABAC",
   "main": "assetTransfer.js",
+  "author": "viditkulsh",
   "scripts": {
     "start": "fabric-chaincode-node start"
   },

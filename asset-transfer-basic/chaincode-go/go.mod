@@ -1,4 +1,4 @@
-module github.com/hyperledger/fabric-samples/asset-transfer-basic/chaincode-go
+module github.com/viditkulsh/fabric-samples/asset-transfer-basic/chaincode-go
 
 go 1.21
 

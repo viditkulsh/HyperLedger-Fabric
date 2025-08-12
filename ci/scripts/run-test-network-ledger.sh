@@ -65,7 +65,7 @@ peer chaincode query -C $CHANNEL_NAME -n ledger -c '{"function":"GetAllAssets","
 
 # Test rich queries if supported
 echo "Testing rich queries (if supported)..."
-peer chaincode query -C $CHANNEL_NAME -n ledger -c '{"function":"QueryAssetsByOwner","Args":["tom"]}' || echo "Rich queries not supported in this chaincode"
+peer chaincode query -C $CHANNEL_NAME -n ledger -c '{"function":"QueryAssetsByOwner","Args":["vidit"]}' || echo "Rich queries not supported in this chaincode"
 
 echo "Ledger test completed successfully!"
 
